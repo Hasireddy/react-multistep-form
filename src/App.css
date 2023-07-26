@@ -1,38 +1,92 @@
-.App {
+.container {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card
+{
+  width:1200px;
+  background-color: white;
+  border:1px solid #333;
+  border-radius:0.5rem;
+  padding:2rem;
+  max-width:1500px;
+  margin:0 auto;
+  display:flex;
+  flex-direction:column;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+button{
+  background-color: #4caf50;
+  border:none;
+  color:white;
+  padding:0.8rem;
+  text-align:center;
+  text-decoration:none;
+  display:inline-block;
+  font-size:20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+input{
+  border:2px solid rgb(98,0,255);
+  border-radius:5px;
+  height:50px;
+  display:block;
+  margin-bottom:2rem;
+  font-size: 20px;
+  font-weight: 200;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding:5px;
+ 
+}
+
+.progress-bar
+{
+  width:1250px;
+  height:25px;
+  background-color: white;
+  margin-bottom:40px;
+}
+
+.progress-bar div
+{
+width:25%;
+height:100%;
+background-color: rgb(98,0,255);
+}
+
+.main
+{
+  overflow: hidden;
   display: flex;
+  justify-content: center;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  position: relative;
+  height: 100vh;
+  background: rgba(194, 233, 251, 1);
+  background: radial-gradient(
+    circle,
+    rgba(161, 196, 253, 1) 10%,
+    rgba(194, 233, 251, 1) 100%
+  );
 }
 
-.App-link {
-  color: #61dafb;
+
+
+.step-title {
+  margin: 0;
+  margin-bottom: 1rem;
+  font-size: 4rem;
+  text-align:center;
+  color: #4caf50;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+label{
+  display:flex;
+  margin:3px;
+  font-size:30px;
+  font-weight: 100;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
+
